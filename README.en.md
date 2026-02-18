@@ -10,27 +10,27 @@ Each package is published separately under the `@svensk/` scope on npm — insta
 
 | Package | Description | Status |
 |---------|-------------|--------|
-| [`@svensk/pernum`](packages/pernum/) | Swedish personal identity numbers — validation, parsing, formatting | Implemented |
-| [`@svensk/orgnum`](packages/orgnum/) | Swedish organization numbers — validation, parsing, org type | Implemented |
-| [`@svensk/helgdagar`](packages/helgdagar/) | Swedish public holidays — official holidays, business day checks | Implemented |
 | `@svensk/swish` | Swish payment API client | Planned |
 | `@svensk/bankid` | BankID (authentication + signing) | Planned |
 | `@svensk/bankgiro` | BankGiro/BG-MAX (parse, create payment files) | Planned |
 | `@svensk/sms` | SMS via 46elks / Twilio | Planned |
 | `@svensk/sie` | SIE4 accounting format (read + write) | Planned |
 
-## Quick start
+## Existing packages for common needs
 
-```bash
-npm install @svensk/pernum
-```
+The following areas are already well covered by established npm packages:
 
-```ts
-import { valid, parse } from "@svensk/pernum";
+### Personal identity numbers (personnummer)
 
-valid("199001011234");  // true
-parse("900101-1234");   // { year: 1990, month: 1, day: 1, gender: "male", ... }
-```
+- [`personnummer`](https://www.npmjs.com/package/personnummer) — ~20k downloads/week. Validation, parsing, formatting, gender, age. Multi-language project with implementations in Go, PHP, Java and more.
+### Organization numbers (organisationsnummer)
+
+- [`organisationsnummer`](https://www.npmjs.com/package/organisationsnummer) — ~3k downloads/week. Validation and formatting. Same organization as `personnummer`.
+
+### Public holidays (helgdagar)
+
+- [`swedish-holidays`](https://www.npmjs.com/package/swedish-holidays) — ~2k downloads/week. Public holidays, holiday eves, English/Swedish names.
+- [`date-holidays`](https://www.npmjs.com/package/date-holidays) — ~350k downloads/week. General holiday library with support for Sweden (and 200+ other countries).
 
 ## Design principles
 
