@@ -10,6 +10,7 @@ Each package is published separately under the `@svensk/` scope on npm — insta
 
 | Package | Description | Status |
 |---------|-------------|--------|
+| [`@svensk/helgdagar`](packages/helgdagar/) | Swedish public holidays — official holidays, business day checks | Implemented |
 | `@svensk/swish` | Swish payment API client | Planned |
 | `@svensk/bankid` | BankID (authentication + signing) | Planned |
 | `@svensk/bankgiro` | BankGiro/BG-MAX (parse, create payment files) | Planned |
@@ -27,10 +28,6 @@ The following areas are already well covered by established npm packages:
 
 - [`organisationsnummer`](https://www.npmjs.com/package/organisationsnummer) — ~3k downloads/week. Validation and formatting. Same organization as `personnummer`.
 
-### Public holidays (helgdagar)
-
-- [`swedish-holidays`](https://www.npmjs.com/package/swedish-holidays) — ~2k downloads/week. Public holidays, holiday eves, English/Swedish names.
-- [`date-holidays`](https://www.npmjs.com/package/date-holidays) — ~350k downloads/week. General holiday library with support for Sweden (and 200+ other countries).
 
 ## Design principles
 

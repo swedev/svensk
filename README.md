@@ -10,6 +10,7 @@ Varje paket publiceras separat under `@svensk/`-scope:t på npm — installera b
 
 | Paket | Beskrivning | Status |
 |-------|-------------|--------|
+| [`@svensk/helgdagar`](packages/helgdagar/) | Svenska helgdagar — röda dagar, helgdagsaftnar, arbetsdagar | Implementerad |
 | `@svensk/swish` | Swish API-klient | Planerad |
 | `@svensk/bankid` | BankID (autentisering + signering) | Planerad |
 | `@svensk/bankgiro` | BankGiro/BG-MAX (parse, skapa betalfiler) | Planerad |
@@ -27,10 +28,6 @@ Följande områden täcks redan väl av befintliga npm-paket:
 
 - [`organisationsnummer`](https://www.npmjs.com/package/organisationsnummer) — ~3k nedladdningar/vecka. Validering och formatering. Samma organisation som `personnummer`.
 
-### Helgdagar
-
-- [`swedish-holidays`](https://www.npmjs.com/package/swedish-holidays) — ~2k nedladdningar/vecka. Röda dagar, helgdagsaftnar, engelska/svenska namn.
-- [`date-holidays`](https://www.npmjs.com/package/date-holidays) — ~350k nedladdningar/vecka. Generellt helgdagsbibliotek med stöd för Sverige (och 200+ andra länder).
 
 ## Designprinciper
 
